@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!--Barra Inicio Navegacion-->
+    <header class="header">
+        <div class="logo">
+            <a href="#">Angel</a>
+        </div>
+        <div class="nav-responsive" onclick="navegacionresponsiva()">
+            <i class="fa-solid fa-bars" id="barra__responsiva"></i>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobremi">Sobre Mí</a>
+            <a href="#estudios">Educación</a>
+            <a href="#portafolio">Portafolio</a>
+        </nav>
+    </header> <!--Barra de Navegacion-->
+
+    <!--SECCION INICIO Con video-->
+
+
+
+    <section id="inicio" class="inicio">
+
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="video/portafolio3.mp4" type="video/mp4">
+                <source src="video/Portafolio3.webm" type="video/webm">
+
+            </video>
+
+        </div>
+
+        <!--Se encuentra la foto de Perfil-->
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <picture class="contenedor-img-fondo">
+                    <source srcset="imagenes/Angel.avif" type="image/avif">
+                    <source srcset="imagenes/Angel.webp" type="image/webp">
+                     <img loading="lazy"  srcset="imagenes/Angel.png" src="" alt="Angel">
+                </picture>
+            </div>
+
+            <!--Se encuentra El nombre y las redes sociales-->
+            <h1>Angel Mendez</h1>
+            <h2>Técnico Superior en Informática</h2>
+            <div class="redes">
+               <a href="https://www.facebook.com/angel.mendez.9404/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/Enyel04" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.link/fjiwd8" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/angel-mendez-143133254/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.com/users/416599088503717898" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            </div>
+
+        </div>
+    </section> <!--Aqui termina el perfil con fotografia-->
+  
+
+    <!--Todos los datos realacionados a sobre mi-->
+    <section class="sobremi" id="sobremi">
+        <div class="contenedor__principal">
+        <div class="contenedor-sobremi__todo">
+
+        
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, Soy Angel Mendez.</span>
+                    Soy un apasionado informático con experiencia en diversos lenguajes de programación y herramientas de diseño y video. He aplicado mis habilidades en proyectos reales y siempre estoy buscando nuevos desafíos para crecer. Comprometido con el aprendizaje continuo, estoy listo para contribuir y seguir aprendiendo en mi carrera.</p>
+            </div>
+
+            <!--Datos de Fecha de nacimiento y Edad-->
+            <div class="contenedor-sobremi">
+                <div class="contenedor-sobremi-datos">
+                    <h1>Datos Personales</h1>
+                    <p><span>Nacimiento:</span>04/11/1999</p>
+                    <p><span>Correo:</span>angelfreelancer04@gmail.com</p>
+                    <p><span>Dirección:</span>Venezuela,Portuguesa Acarigua</p>
+                </div>
+                <div class="sobremi-conocimientos">
+                    <h1>Conocimientos</h1>
+
+                <!--Aqui se encuentran los iconos y realizado en Reponsive-->
+                    <div class="contenedor-sobremi-conocimientos">
+
+                        <div class="contenedor-sobre-conocimientos-icono">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML5</span>
+                        </div> <!--Final Icono-->
+
+                 
+
+                       
+                        <div class="contenedor-sobre-conocimientos-icono">
+                            <i class="fa-brands fa-css3-alt"></i>
+                                <span>CSS</span>
+                        </div><!--Final Icono-->
+
+                        <div class="contenedor-sobre-conocimientos-icono">
+                            <i class="fa-brands fa-js"></i>
+                                <span>JavaScript</span>
+                        </div><!--Final Icono-->
+
+                        <div class="contenedor-sobre-conocimientos-icono">
+                            <i class="fa-brands fa-node-js"></i>
+                            <span>Node-Js</span>
+                         </div><!--Final Icono-->
+
+                        <div class="contenedor-sobre-conocimientos-icono">
+                            <i class="fa-brands fa-sass"></i>
+                            <span>SASS</span>
+                        </div><!--Final Icono-->
+
+                        <div class="contenedor-sobre-conocimientos-icono">
+                            <i class="fa-solid fa-database"></i>
+                            <span>MySQL</span>
+                        </div><!--Final Icono-->
+
+                        <div class="contenedor-sobre-conocimientos-icono">
+                            <i class="fa-brands fa-php"></i>
+                            <span>PHP</span>
+                        </div><!--Final Icono-->
+
+                        <div class="contenedor-sobre-conocimientos-icono">
+                            <i class="fa-solid fa-wand-magic"></i>
+                                <span>Edición</span>
+                        </div><!--Final Icono-->
+                        
+                   
+                    </div>
+                   
+                </div>  
+          
+        </div>
+       
+        <div class="contenedor-boton">
+            <button>Descargar CV  <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+      </div>
+    </div>
+</div>
+    </section>
+
+
+    <!--estudios-->
+
+    <section id="estudios" class="estudios">
+        <div class="contenedor-estudios">
+            <h2>Educación</h2>
+            <div class="datos-estudio">
+                <h4>Bachiller en Ciencias</h4>
+               <p>Unidad Educativa Privada  "Colegio Los Ilustres" 2017</p>
+                
+            </div>
+            <div class="datos-estudio">
+                <h4>Técnico Superior en Informática</h4>
+                <p>Universidad Politécnica Territorial del estado Portuguesa "Juan de Jesús Montilla" 2023</p>
+                
+                
+            </div>
+
+        </div>
+
+    </section>
+
+
+     <!--Portafolio-->
+
+     <section id="portafolio" class="portafolio">
+        <div class="contenedor-portafolio">
+            <!--Navegacion de Tabs-->
+            <h3>Portafolio</h3>
+            <div class="navegacion__tabs">
+                <p data-target="#programacion">Programación <br><i class="fa-solid fa-code"></i></p>
+                <p data-target="#edicion">Edición <br><i class="fa-solid fa-pen-to-square"></i></p>
+                <p data-target="#videos">Videos <br><i class="fa-solid fa-camera"></i></p>
+                <p data-target="#proyectos">Proyectos <br><i class="fa-solid fa-diagram-project"></i></p>
+            </div>
+            <div class="contenido__portafolio">
+                <!--Inicio contenedor -->
+                <div data-content id="programacion" class="active" >
+
+                
+                    <div class=" contenedor__contenido__portafolio__imagenes">
+
+                  
+                        <!--inici contenedor Programacion-->
+                        <div class="contenedor__imagenes " data-titulo="Blog De Café/ HTML,CSS Y JS">
+                            <picture>
+                                <source srcset="imagenes/programacion/p1.webp" type="image/webp">
+                                <img  loading="lazy" src="imagenes/programacion/p1.jpg" alt="p1">
+                            </picture>
+                             <a href="https://github.com/Enyel04/Blog-de-cafe" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://blog-de-cafe-enyel.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        </div> <!--Imagen final-->
+
+                        <div class="contenedor__imagenes" data-titulo="Calculadora Responsive/ HTML, CSS y JS">
+                          
+                            <picture>
+                                <source srcset="imagenes/programacion/p2.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/programacion/p2.jpg" alt="p2">
+                            </picture>
+
+                            <a href="https://github.com/Enyel04/calculadora" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://calculadora-enyel.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
+
+                        
+                        </div> <!--Imagen Final-->
+
+                        <div class="contenedor__imagenes" data-titulo="HomePage de Rock / HTML, SASS y JS">
+                          
+                            <picture>
+                                <source srcset="imagenes/programacion/p3.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/programacion/p3.jpg" alt="p3">
+                            </picture>
+
+                            
+                            <a href="https://github.com/Enyel04/Festival_musica" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://festival-enyel.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
+
+                      
+                        </div> <!--Imagen Final-->
+
+                        <div class="contenedor__imagenes" data-titulo="Tienda de Ropa/ HTML, CSS y JS">
+                      
+                            <picture>
+                                <source srcset="imagenes/programacion/p4.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/programacion/p4.jpg" alt="p4">
+                            </picture>
+
+                            <a href="https://github.com/Enyel04/Festival_musica" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://festival-enyel.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
+
+                       
+                        </div> <!--Imagen Final-->
+
+                        <div class="contenedor__imagenes" data-titulo="HomePage Komotu/ HTML, SASS y PHP.">
+                       
+                            <picture>
+                                <source srcset="imagenes/programacion/p5.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/programacion/p5.jpg" alt="p5">
+                            </picture>
+
+                            <a href="https://github.com/Enyel04/CRUD_Tienda_de_Ropa" target="_blank" class="icono__solo"><i class="fa-brands fa-github"></i></a>
+
+                        </div> <!--Imagen Final-->
+
+                     </div>
+
+                </div> <!---->
+
+                <div data-content  id="edicion">
+                    <div class=" contenedor__contenido__portafolio__imagenes">
+
+                        <div class="contenedor__imagenes" data-titulo="Marca ARMO/ Diseño Photoshop">
+                       
+                            <picture>
+                                <source srcset="imagenes/edicion/anuncio1.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/edicion/anuncio1.jpg" alt="e1">
+                            </picture>
+
+                        </div> <!--Imagen Final-->
+
+                        <div class="contenedor__imagenes" data-titulo="Marca ARMO/ Diseño Photoshop">
+                       
+                            <picture>
+                                <source srcset="imagenes/edicion/anuncio2.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/edicion/anuncio2.jpg" alt="e2">
+                            </picture>
+
+                        </div> <!--Imagen Final-->
+                        <div class="contenedor__imagenes" data-titulo="Tienda Informática/Registro">
+                       
+                            <picture>
+                                <source srcset="imagenes/edicion/anuncio3.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/edicion/anuncio3.jpg" alt="e3">
+                            </picture>
+
+                        </div> <!--Imagen Final-->
+
+                        <div class="contenedor__imagenes" data-titulo="Logo Fisioterapeuta">
+                       
+                            <picture>
+                                <source srcset="imagenes/edicion/logo1.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/edicion/logo1.png" alt="e4">
+                            </picture>
+
+                        </div> <!--Imagen Final-->
+
+                        <div class="contenedor__imagenes" data-titulo="Logo Tequedeli">
+                       
+                            <picture>
+                                <source srcset="imagenes/edicion/logo2.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/edicion/logo2.png" alt="e4">
+                            </picture>
+
+                        </div> <!--Imagen Final-->
+
+                        
+                        <div class="contenedor__imagenes" data-titulo="Wallpaper">
+                       
+                            <picture>
+                                <source srcset="imagenes/edicion/fondo.webp" type="image/webp">
+                                <img loading="lazy"  src="imagenes/edicion/fondo.png" alt="e4">
+                            </picture>
+
+                        </div> <!--Imagen Final-->
+
+                     </div>
+
+                    </div>
+                </div>
+                <!--INICIO VIDEOS-->
+                <div data-content  id="videos">
+                    <div class="contenedor__contenido__portafolio__videos">
+                  
+                        <div class="video-containerr">
+                            <iframe src="https://www.youtube.com/embed/XDAKTdgn4iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-containerr">
+                            <iframe src="https://www.youtube.com/embed/ecXziOiJJ0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                        </div>
+                        <div class="video-containerr">
+                            <iframe src="https://www.youtube.com/embed/Rx3N-Ej27BQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                      
+                </div>
+                <div data-content  id="proyectos">
+                    <div class=" contenedor__contenido__portafolio__imagenes__universidad">
+                        
+                        <div style="cursor: pointer;" class="contenedor__imagenes" data-titulo="Software de Gestión de Horarios Docentes Unearte"  onclick="window.modal1.showModal();">
+                            <picture>
+                                <source srcset="imagenes/unearte/proyecto1.webp" type="image/webp">
+                                <img loading="lazy" src="imagenes/unearte/proyecto1.jpg" alt="e4">
+                            </picture>
+                        
+                        
+                        </div>
+                        <dialog id="modal1">
+                            <h4>Software de Gestión de Horarios Docentes</h4>
+
+                            <div class="slider">
+                                <div class="slider--inner">
+                                    <img loading="lazy" src="imagenes/unearte/proyecto3.webp" data-webp="imagenes/unearte/proyecto3.jpg" alt="img">
+                                    <img loading="lazy" src="imagenes/unearte/proyecto4.webp" data-webp="imagenes/unearte/proyecto4.jpg" alt="img">
+                                    <img loading="lazy" src="imagenes/unearte/proyecto5.webp" data-webp="imagenes/unearte/proyecto5.jpg" alt="img">
+                                    <img loading="lazy" src="imagenes/unearte/registro.webp" data-webp="imagenes/unearte/registro.jpg" alt="img">
+                                </div>
+                              </div>
+                              
+                           
+                            <p>Esta aplicación se Encarga de Gestionar los horarios, registrar a profesores tambien aulas,
+                                mostrara si el profesor se encuentra activo o inactivo al igual que el aula para sus respectiva
+                                asignación para el Horario, Imprimir un reporte completo de todos los profesores asignados en
+                                horarios con sus respectivas carreras.</p>
+                              
+                            <button onclick="window.modal1.close();">Cerrar</button>
+                            <a href="https://github.com/TheOzcuro/proyecto" target="_blank" class="icono__solo"><i class="fa-brands fa-github"></i></a>
+                        </dialog>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+<footer class="footer">
+    <nav class="nave" id="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobremi">Sobre Mí</a>
+        <a href="#estudios">Educación</a>
+        <a href="#portafolio">Portafolio</a>
+    </nav>
+    
+</footer>
+
+
+
+</body>
+
+<script src="js/js.js"></script>
+</html>
