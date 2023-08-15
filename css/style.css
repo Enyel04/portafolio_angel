@@ -850,13 +850,24 @@ dialog p {
   font-size: 1rem;
 }
 
-dialog a {
+dialog .icono_proyecto {
   color: var(--negro);
+
   font-size: 5rem;
   border: none;
   transition: color 0.3s;
   top: 1rem;
-  position: relative;
+  background:#ff000000;
+ 
+  border-radius: 3rem;
+
+}
+
+dialog .icono_proyecto:hover{
+  color: var(--negroClaro);
+  
+
+
 }
 
 
