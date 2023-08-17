@@ -254,7 +254,7 @@ background-color: var(--negro);
 
 }
 
-.inicio .contenedor-banner .redes i{
+.inicio .contenedor-banner .redes a{
   padding: 1rem;
  
   border-radius: 20%;
@@ -263,7 +263,7 @@ background-color: var(--negro);
 
 }
 
-.inicio .contenedor-banner .redes i:hover{
+.inicio .contenedor-banner .redes a:hover{
   
   background-color: var(--grisOscuro);
 
