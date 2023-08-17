@@ -91,7 +91,7 @@
 
 .nav {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .nav a {
@@ -121,6 +121,7 @@
     flex-direction: column;
   }
   .nav {
+      gap: 1rem;
     display: flex;
     flex-direction: column;
     max-height: 0;
