@@ -600,9 +600,11 @@ background-color: var(--negro);
 }
 
 .contenedor-portafolio .navegacion__tabs p{
-  cursor: pointer;
-  color: var(--blanco);
+   cursor: pointer;
+  color: var(--negro);
   padding: 1rem;
+  background-color: var(--celeste);
+  border-radius: 2rem;
 width: 15rem;
 
 }
