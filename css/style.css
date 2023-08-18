@@ -666,12 +666,22 @@ background-color: var(--negro);
 }
 
 .contenedor__imagenes img {
+ 
+  height: 20rem;
   width: 100%;
-  height: 25rem;
   border-radius: 3rem;
   cursor: pointer;
   overflow: hidden; /* Oculta el desenfoque que se sale del contenedor */
+
 }
+
+@media (min-width: 768px) {
+  .contenedor__imagenes img{
+    height: 100%;
+   
+  }
+}
+
 
 
 
