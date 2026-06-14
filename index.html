@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
-
-
-
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Angel Mendez | Desarrollador Móvil y Web</title>
 </head>
 <body>
-    <!--Barra Inicio Navegacion-->
     <header class="header">
         <div class="logo">
-            <a href="#">Angel</a>
+            <a href="#">Angel<span class="punto">.</span></a>
         </div>
         <div class="nav-responsive" onclick="navegacionresponsiva()">
             <i class="fa-solid fa-bars" id="barra__responsiva"></i>
@@ -31,377 +27,261 @@
             <a href="#estudios">Educación</a>
             <a href="#portafolio">Portafolio</a>
         </nav>
-    </header> <!--Barra de Navegacion-->
-
-    <!--SECCION INICIO Con video-->
-
-
+    </header>
 
     <section id="inicio" class="inicio">
-
-        <div class="video-container">
-            <video autoplay loop muted>
-                <source src="video/portafolio3.mp4" type="video/mp4">
-                <source src="video/Portafolio3.webm" type="video/webm">
-
-            </video>
-
-        </div>
-
-        <!--Se encuentra la foto de Perfil-->
         <div class="contenedor-banner">
             <div class="contenedor-img">
                 <picture class="contenedor-img-fondo">
-                    <source srcset="imagenes/Angel.avif" type="image/avif">
                     <source srcset="imagenes/Angel.webp" type="image/webp">
-                     <img loading="lazy"  srcset="imagenes/Angel.png" src="" alt="Angel">
+                    <img loading="lazy" src="imagenes/Angel.png" alt="Angel Mendez">
                 </picture>
             </div>
 
-            <!--Se encuentra El nombre y las redes sociales-->
             <h1>Angel Mendez</h1>
-            <h2>Técnico Superior en Informática</h2>
+            <h2>Desarrollador Móvil y Web | TSU en Informática</h2>
+            
             <div class="redes">
-               <a href="https://www.facebook.com/angel.mendez.9404/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
-                <a href="https://github.com/Enyel04" target="_blank"> <i class="fa-brands fa-github"></i></a>
-                <a href="https://wa.link/fjiwd8" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/Enyel04" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/angel-mendez-143133254/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.link/fjiwd8" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://discord.com/users/416599088503717898" target="_blank"><i class="fa-brands fa-discord"></i></a>
             </div>
-
         </div>
-    </section> <!--Aqui termina el perfil con fotografia-->
-  
-
-    <!--Todos los datos realacionados a sobre mi-->
-    <section class="sobremi" id="sobremi">
-        <div class="contenedor__principal">
-        <div class="contenedor-sobremi__todo">
-
-        
-            <div class="contenido-seccion">
-                <h2>Sobre Mí</h2>
-                <p><span>Hola, Soy Angel Mendez.</span>
-                    Soy un apasionado informático con experiencia en diversos lenguajes de programación y herramientas de diseño y video. He aplicado mis habilidades en proyectos reales y siempre estoy buscando nuevos desafíos para crecer. Comprometido con el aprendizaje continuo, estoy listo para contribuir y seguir aprendiendo en mi carrera.</p>
-            </div>
-
-            <!--Datos de Fecha de nacimiento y Edad-->
-            <div class="contenedor-sobremi">
-                <div class="contenedor-sobremi-datos">
-                    <h1>Datos Personales</h1>
-                    <p><span>Nacimiento: </span>04/11/1999</p>
-                    <p><span>Correo: </span>angelfreelancer04@gmail.com</p>
-                    <p><span>Dirección: </span>Venezuela,Portuguesa Acarigua</p>
-                </div>
-                <div class="sobremi-conocimientos">
-                    <h1>Conocimientos</h1>
-
-                <!--Aqui se encuentran los iconos y realizado en Reponsive-->
-                    <div class="contenedor-sobremi-conocimientos">
-
-                        <div class="contenedor-sobre-conocimientos-icono">
-                            <i class="fa-brands fa-html5"></i>
-                            <span>HTML5</span>
-                        </div> <!--Final Icono-->
-
-                 
-
-                       
-                        <div class="contenedor-sobre-conocimientos-icono">
-                            <i class="fa-brands fa-css3-alt"></i>
-                                <span>CSS</span>
-                        </div><!--Final Icono-->
-
-                        <div class="contenedor-sobre-conocimientos-icono">
-                            <i class="fa-brands fa-js"></i>
-                                <span>JavaScript</span>
-                        </div><!--Final Icono-->
-
-                        <div class="contenedor-sobre-conocimientos-icono">
-                            <i class="fa-brands fa-node-js"></i>
-                            <span>Node-Js</span>
-                         </div><!--Final Icono-->
-
-                        <div class="contenedor-sobre-conocimientos-icono">
-                            <i class="fa-brands fa-sass"></i>
-                            <span>SASS</span>
-                        </div><!--Final Icono-->
-
-                        <div class="contenedor-sobre-conocimientos-icono">
-                            <i class="fa-solid fa-database"></i>
-                            <span>MySQL</span>
-                        </div><!--Final Icono-->
-
-                        <div class="contenedor-sobre-conocimientos-icono">
-                            <i class="fa-brands fa-php"></i>
-                            <span>PHP</span>
-                        </div><!--Final Icono-->
-
-                        <div class="contenedor-sobre-conocimientos-icono">
-                            <i class="fa-solid fa-wand-magic"></i>
-                                <span>Edición</span>
-                        </div><!--Final Icono-->
-                        
-                   
-                    </div>
-                   
-                </div>  
-          
-        </div>
-       <!-- 
-        <div class="contenedor-boton">
-            <button>Descargar CV  <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
-      </div>
-            -->
-    </div>
-</div>
     </section>
 
+    <section class="sobremi" id="sobremi">
+        <div class="contenedor__principal">
+            <div class="contenedor-sobremi__todo">
+                <div class="contenido-seccion">
+                    <h2>Sobre Mí</h2>
+                    <p><span>Hola, soy Angel Mendez.</span><br>
+                        Desarrollador de software especializado en la creación de aplicaciones móviles multiplataforma y soluciones web. Me enfoco en construir arquitecturas escalables, interfaces minimalistas y experiencias de usuario fluidas. Actualmente me dedico al desarrollo y publicación de aplicaciones en la Google Play Store, además de la gestión de bases de datos y sistemas ERP Idempiere y creando las Apis.</p>
+                </div>
 
-    <!--estudios-->
+                <div class="contenedor-sobremi">
+                    <div class="contenedor-sobremi-datos">
+                        <h3>Datos Personales</h3>
+                        <p><i class="fa-solid fa-envelope"></i> angelfreelancer04@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Acarigua, Portuguesa, Venezuela</p>
+                    </div>
+                    
+                    <div class="sobremi-conocimientos">
+                        <h3>Stack Tecnológico</h3>
+                        <div class="contenedor-sobremi-conocimientos">
+                            <div class="contenedor-sobre-conocimientos-icono">
+                                <i class="fa-brands fa-flutter" style="color: #02569B;"></i><span>Flutter</span>
+                            </div>
+                            <div class="contenedor-sobre-conocimientos-icono">
+                                <i class="fa-solid fa-code" style="color: #0175C2;"></i><span>Dart</span>
+                            </div>
+                            <div class="contenedor-sobre-conocimientos-icono">
+                                <i class="fa-brands fa-php" style="color: #777BB4;"></i><span>PHP</span>
+                            </div>
+                            <div class="contenedor-sobre-conocimientos-icono">
+                                <i class="fa-solid fa-database" style="color: #336791;"></i><span>PostgreSQL</span>
+                            </div>
+                            <div class="contenedor-sobre-conocimientos-icono">
+                                <i class="fa-solid fa-server" style="color: #e1e1e1;"></i><span>Idempiere</span>
+                            </div>
+                            <div class="contenedor-sobre-conocimientos-icono">
+                                <i class="fa-brands fa-css3-alt" style="color: #38B2AC;"></i><span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="estudios" class="estudios">
         <div class="contenedor-estudios">
             <h2>Educación</h2>
             <div class="datos-estudio">
-                <h4>Bachiller en Ciencias</h4>
-               <p>Unidad Educativa Privada  "Colegio Los Ilustres" 2017</p>
-                
+                <h4>Técnico Superior en Informática</h4>
+                <p>Universidad Politécnica Territorial del estado Portuguesa "Juan de Jesús Montilla"</p>
             </div>
             <div class="datos-estudio">
-                <h4>Técnico Superior en Informática</h4>
-                <p>Universidad Politécnica Territorial del estado Portuguesa "Juan de Jesús Montilla" 2023</p>
-                
-                
+                <h4>Bachiller en Ciencias</h4>
+                <p>Unidad Educativa Privada "Colegio Los Ilustres"</p>
             </div>
-
         </div>
-
     </section>
 
-
-     <!--Portafolio-->
-
-     <section id="portafolio" class="portafolio">
+    <section id="portafolio" class="portafolio">
         <div class="contenedor-portafolio">
-            <!--Navegacion de Tabs-->
-            <h3>Portafolio</h3>
+            <h2>Portafolio</h2>
+            
             <div class="navegacion__tabs">
-                <p data-target="#programacion">Programación <br><i class="fa-solid fa-code"></i></p>
-                <p data-target="#edicion">Edición <br><i class="fa-solid fa-pen-to-square"></i></p>
-                <p data-target="#videos">Videos <br><i class="fa-solid fa-camera"></i></p>
-                <p data-target="#proyectos">Proyectos <br><i class="fa-solid fa-diagram-project"></i></p>
+                <p data-target="#apps-moviles" class="active"><i class="fa-brands fa-google-play"></i> Apps Móviles</p>
+                <p data-target="#sistemas-web"><i class="fa-solid fa-laptop-code"></i> Sistemas Web</p>
             </div>
+            
             <div class="contenido__portafolio">
-                <!--Inicio contenedor -->
-                <div data-content id="programacion" class="active" >
-
                 
-                    <div class=" contenedor__contenido__portafolio__imagenes">
+               <div data-content id="apps-moviles" class="active">
+    <div class="contenedor__contenido__portafolio__imagenes">
+        
+        <div class="contenedor__imagenes" data-titulo="Conversor VE Monitor" onclick="window.modal_conversor.showModal();" style="cursor: pointer;">
+            <picture>
+                <img loading="lazy" src="imagenes/app/ConversorVE.png" alt="Conversor VE Monitor App">
+            </picture>
+            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
+        </div> 
 
-                  
-                        <!--inici contenedor Programacion-->
-                        <div class="contenedor__imagenes " data-titulo="Blog De Café/ HTML,CSS Y JS">
+        <div class="contenedor__imagenes" data-titulo="Autogestión Snitch" onclick="window.modal_snitch.showModal();" style="cursor: pointer;">
+            <picture>
+                <img loading="lazy" src="imagenes/app/iconss.png" alt="Autogestión Snitch">
+            </picture>
+            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
+        </div> 
+
+        <div class="contenedor__imagenes" data-titulo="Fuerza de Ventas" onclick="window.modal_ventas.showModal();" style="cursor: pointer;">
+            <picture>
+                <img loading="lazy" src="imagenes/app/salesforce.png" alt="Fuerza de Ventas App">
+            </picture>
+            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
+        </div> 
+    </div>
+
+                <dialog id="modal_conversor" class="modal-moderno">
+                    <h4>Conversor VE Monitor</h4>
+                    <div class="slider">
+                        <div class="slider--inner">
+                            <img loading="lazy" src="imagenes/app/ConversorVE.png" alt="Conversor VE Monitor">
+                        </div>
+                    </div>
+                    <p style="color: var(--celeste); font-family: var(--fuente-codigo); font-size: 1.4rem; text-align: center;">
+                        Desarrollado con: Flutter & Dart
+                    </p>
+                    <p>Herramienta financiera de alta utilidad optimizada para el mercado local. Procesa conversiones precisas entre Bolívares (VES), Dólares y Euros basándose en las tasas oficiales del Banco Central de Venezuela (BCV).</p>
+                    <p>Diseñada bajo principios de rendimiento y privacidad, ofrece una arquitectura ligera y una interfaz minimalista para facilitar cálculos rápidos en transacciones diarias.</p>
+                    <div class="modal-acciones" style="flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                        <a href="https://play.google.com/store/apps/details?id=com.enyeldev.cambiovemonitor&pcampaignid=web_share" target="_blank" class="btn-github" style="background-color: #01875f;"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                        <button onclick="window.modal_conversor.close();" class="btn-cerrar">Cerrar</button>
+                    </div>
+                </dialog>
+
+                <dialog id="modal_snitch" class="modal-moderno">
+                    <h4>Autogestión Snitch</h4>
+                    <div class="slider">
+                        <div class="slider--inner">
+                            <img loading="lazy" src="imagenes/app/iconss.png" alt="Autogestión Snitch">
+                        </div>
+                    </div>
+                    <p style="color: var(--celeste); font-family: var(--fuente-codigo); font-size: 1.4rem; text-align: center;">
+                        Desarrollado con: Flutter & Dart
+                    </p>
+                    <p>Plataforma B2B de autogestión orientada a optimizar la cadena de suministro de negocios. Simplifica el proceso de abastecimiento permitiendo a los comerciantes explorar catálogos, centralizar compras y generar pedidos de reposición de inventario en tiempo real.</p>
+                    <p>Su interfaz fluida y escalable reduce los tiempos de gestión con proveedores y agiliza la logística comercial.</p>
+                    <p>Funcionando con Idempiere</p>
+
+                    <div class="modal-acciones" style="flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                        <a href="URL_PLAYSTORE_SNITCH" target="_blank" class="btn-github" style="background-color: #01875f;"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                        <button onclick="window.modal_snitch.close();" class="btn-cerrar">Cerrar</button>
+                    </div>
+                </dialog>
+
+                <dialog id="modal_ventas" class="modal-moderno">
+                    <h4>Fuerza de Ventas</h4>
+                    <div class="slider">
+                        <div class="slider--inner">
+                            <img loading="lazy" src="imagenes/app/salesforce.png" alt="Fuerza de Ventas">
+                        </div>
+                    </div>
+                    <p style="color: var(--celeste); font-family: var(--fuente-codigo); font-size: 1.4rem; text-align: center;">
+                        Desarrollado con: Flutter & Dart
+                    </p>
+                    <p>Aplicación móvil corporativa diseñada para optimizar las operaciones de equipos comerciales en campo. Permite la gestión eficiente de órdenes de venta, registro de cobros y captura de coordenadas geográficas.</p>
+                    <p>Destaca por su arquitectura con soporte <em>offline</em> y sincronización diferida de datos, garantizando la operatividad sin conexión a internet y mejorando la productividad en la toma de decisiones.</p>
+                    <p>Funcionando con Idempiere</p>
+
+                    <div class="modal-acciones" style="flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                        <a href="URL_PLAYSTORE_VENTAS" target="_blank" class="btn-github" style="background-color: #01875f;"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                        <button onclick="window.modal_ventas.close();" class="btn-cerrar">Cerrar</button>
+                    </div>
+                </dialog>
+            </div>
+
+                <div data-content id="sistemas-web">
+                    <div class="contenedor__contenido__portafolio__imagenes">
+
+                      <div class="contenedor__imagenes" data-titulo="Sistema de Gestión Escolar / PHP & SQL" onclick="window.modal_escolar.showModal();" style="cursor: pointer;">
                             <picture>
-                                <source srcset="imagenes/programacion/p1.webp" type="image/webp">
-                                <img  loading="lazy" src="imagenes/programacion/p1.jpg" alt="p1">
+                                <img loading="lazy" src="imagenes/vicente/VicenteEmilioSojo.png" alt="Gestión Escolar">
                             </picture>
-                             <a href="https://github.com/Enyel04/Blog-de-cafe" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://blog-de-cafe-enyel.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        </div> <!--Imagen final-->
+                            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
 
-                        <div class="contenedor__imagenes" data-titulo="Calculadora Responsive/ HTML, CSS y JS">
-                          
-                            <picture>
-                                <source srcset="imagenes/programacion/p2.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/programacion/p2.jpg" alt="p2">
-                            </picture>
-
-                            <a href="https://github.com/Enyel04/calculadora" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://calculadora-enyel.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-
-                        
-                        </div> <!--Imagen Final-->
-
-                        <div class="contenedor__imagenes" data-titulo="HomePage de Rock / HTML, SASS y JS">
-                          
-                            <picture>
-                                <source srcset="imagenes/programacion/p3.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/programacion/p3.jpg" alt="p3">
-                            </picture>
-
+                        <dialog id="modal_escolar" class="modal-moderno">
+                            <h4>Sistema de Gestión Escolar</h4>
                             
-                            <a href=" https://github.com/Enyel04/Festival_musica" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://festival-enyel.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-
-                     
-                        </div> <!--Imagen Final-->
-
-                        <div class="contenedor__imagenes" data-titulo="Tienda de Ropa/ HTML, CSS y JS">
-                      
-                            <picture>
-                                <source srcset="imagenes/programacion/p4.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/programacion/p4.jpg" alt="p4">
-                            </picture>
-
-                            <a href="https://github.com/Enyel04/Tienda-de-ropa" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://tiendaderopaenyel.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-
-                       
-                        </div> <!--Imagen Final-->
-
-                        <div class="contenedor__imagenes" data-titulo="HomePage Komotu/ HTML, SASS y PHP.">
-                       
-                            <picture>
-                                <source srcset="imagenes/programacion/p5.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/programacion/p5.jpg" alt="p5">
-                            </picture>
-
-                            <a href="https://github.com/Enyel04/CRUD_Tienda_de_Ropa" target="_blank" class="icono__solo"><i class="fa-brands fa-github"></i></a>
-
-                        </div> <!--Imagen Final-->
-
-                     </div>
-
-                </div> <!---->
-
-                <div data-content  id="edicion">
-                    <div class=" contenedor__contenido__portafolio__imagenes">
-
-                        <div class="contenedor__imagenes" data-titulo="Marca ARMO/ Diseño Photoshop">
-                       
-                            <picture>
-                                <source srcset="imagenes/edicion/anuncio1.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/edicion/anuncio1.jpg" alt="e1">
-                            </picture>
-
-                        </div> <!--Imagen Final-->
-
-                        <div class="contenedor__imagenes" data-titulo="Marca ARMO/ Diseño Photoshop">
-                       
-                            <picture>
-                                <source srcset="imagenes/edicion/anuncio2.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/edicion/anuncio2.jpg" alt="e2">
-                            </picture>
-
-                        </div> <!--Imagen Final-->
-                        <div class="contenedor__imagenes" data-titulo="Tienda Informática/Registro">
-                       
-                            <picture>
-                                <source srcset="imagenes/edicion/anuncio3.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/edicion/anuncio3.jpg" alt="e3">
-                            </picture>
-
-                        </div> <!--Imagen Final-->
-
-                        <div class="contenedor__imagenes" data-titulo="Logo Fisioterapeuta">
-                       
-                            <picture>
-                                <source srcset="imagenes/edicion/logo1.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/edicion/logo1.png" alt="e4">
-                            </picture>
-
-                        </div> <!--Imagen Final-->
-
-                        <div class="contenedor__imagenes" data-titulo="Logo Tequedeli">
-                       
-                            <picture>
-                                <source srcset="imagenes/edicion/logo2.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/edicion/logo2.png" alt="e4">
-                            </picture>
-
-                        </div> <!--Imagen Final-->
-
-                        
-                        <div class="contenedor__imagenes" data-titulo="Wallpaper">
-                       
-                            <picture>
-                                <source srcset="imagenes/edicion/fondo.webp" type="image/webp">
-                                <img loading="lazy"  src="imagenes/edicion/fondo.png" alt="e4">
-                            </picture>
-
-                        </div> <!--Imagen Final-->
-
-                     </div>
-
-                    </div>
-                </div>
-                <!--INICIO VIDEOS-->
-                <div data-content  id="videos">
-                    <div class="contenedor__contenido__portafolio__videos">
-                  
-                        <div class="video-containerr">
-                            <iframe src="https://www.youtube.com/embed/XDAKTdgn4iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-containerr">
-                            <iframe src="https://www.youtube.com/embed/ecXziOiJJ0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-                        </div>
-                        <div class="video-containerr">
-                            <iframe src="https://www.youtube.com/embed/Rx3N-Ej27BQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    
-                      
-                </div>
-                <div data-content  id="proyectos">
-                    <div class=" contenedor__contenido__portafolio__imagenes__universidad">
-                        
-                        <div style="cursor: pointer;" class="contenedor__imagenes" data-titulo="Software de Gestión de Horarios Docentes Unearte"  onclick="window.modal1.showModal();">
-                            <picture>
-                                <source srcset="imagenes/unearte/proyecto1.webp" type="image/webp">
-                                <img loading="lazy" src="imagenes/unearte/proyecto1.jpg" alt="e4">
-                            </picture>
-                        
-                        
-                        </div>
-                        <dialog id="modal1">
-                            <h4>Software de Gestión de Horarios Docentes</h4>
-
                             <div class="slider">
                                 <div class="slider--inner">
-                                    <img loading="lazy" src="imagenes/unearte/proyecto3.webp" data-webp="imagenes/unearte/proyecto3.jpg" alt="img">
-                                    <img loading="lazy" src="imagenes/unearte/proyecto4.webp" data-webp="imagenes/unearte/proyecto4.jpg" alt="img">
-                                    <img loading="lazy" src="imagenes/unearte/proyecto5.webp" data-webp="imagenes/unearte/proyecto5.jpg" alt="img">
-                                    <img loading="lazy" src="imagenes/unearte/registro.webp" data-webp="imagenes/unearte/registro.jpg" alt="img">
+                                    <img loading="lazy" src="imagenes/vicente/VicenteEmilioSojo.png" alt="Gestión Escolar">
                                 </div>
-                              </div>
-                              
-                           
-                            <p>Esta aplicación se Encarga de Gestionar los horarios, registrar a profesores tambien aulas,
-                                mostrara si el profesor se encuentra activo o inactivo al igual que el aula para sus respectiva
-                                asignación para el Horario, Imprimir un reporte completo de todos los profesores asignados en
-                                horarios con sus respectivas carreras.</p>
-                              
-                            <button onclick="window.modal1.close();">Cerrar</button>
-                            <a href="https://github.com/TheOzcuro/proyecto" target="_blank" class="icono_proyecto"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            
+                            <p style="color: var(--celeste); font-family: var(--fuente-codigo); font-size: 1.4rem; text-align: center;">
+                                Desarrollado con: PHP, MySQL y JavaScript.
+                            </p>
+
+                            <p>Desarrollado durante el 2024, su objetivo central es sistematizar la elaboración de los horarios del personal docente basándose en las reglas de negocio y los requerimientos de la institución.</p>
+                            
+                            <p>Esta herramienta agiliza la búsqueda de información oportuna para la toma de decisiones, garantizando la seguridad de la data y permitiendo gestionar de forma integral la información personal de los profesores y usuarios del sistema.</p>
+
+                            <div class="modal-acciones" style="flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                                <a href="https://www.youtube.com/watch?v=Xm2y1POLqYs" target="_blank" class="btn-video"><i class="fa-brands fa-youtube"></i> Ver Video</a>
+                                                            
+                                <button onclick="window.modal_escolar.close();" class="btn-cerrar">Cerrar</button>
+                            </div>
                         </dialog>
+
+                        <div class="contenedor__imagenes" data-titulo="Gestión de Horarios Unearte" onclick="window.modal1.showModal();">
+                            <picture>
+                                <source srcset="imagenes/unearte/proyecto1.webp" type="image/webp">
+                                <img loading="lazy" src="imagenes/unearte/proyecto1.jpg" alt="Unearte">
+                            </picture>
+                            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+
+                        <div class="contenedor__imagenes" data-titulo="Tienda Komotu / PHP & SASS">
+                            <picture>
+                                <source srcset="imagenes/programacion/p5.webp" type="image/webp">
+                                <img loading="lazy" src="imagenes/programacion/p5.jpg" alt="Komotu">
+                            </picture>
+                            <a href="https://github.com/Enyel04/CRUD_Tienda_de_Ropa" target="_blank" class="icono__solo"><i class="fa-brands fa-github"></i></a>
+                        </div>
 
                     </div>
 
+                    <dialog id="modal1" class="modal-moderno">
+                        <h4>Software de Gestión de Horarios Docentes</h4>
+                        <div class="slider">
+                            <div class="slider--inner">
+                                <img loading="lazy" src="imagenes/unearte/proyecto3.webp" alt="img">
+                                <img loading="lazy" src="imagenes/unearte/proyecto4.webp" alt="img">
+                                <img loading="lazy" src="imagenes/unearte/registro.webp" alt="img">
+                            </div>
+                        </div>
+                        <p>Sistema encargado de gestionar horarios, registrar profesores y aulas, verificando el estado de actividad para su respectiva asignación. Genera reportes completos de asignaciones por carrera.</p>
+                        <div class="modal-acciones">
+                            <a href="https://github.com/TheOzcuro/proyecto" target="_blank" class="btn-github"><i class="fa-brands fa-github"></i> Ver Código</a>
+                            <button onclick="window.modal1.close();" class="btn-cerrar">Cerrar</button>
+                        </div>
+                    </dialog>
+                </div> 
 
+            
 
-                </div>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <p>© 2026 Angel Mendez. Construido con <i class="fa-solid fa-heart" style="color: var(--celeste);"></i> y mucho café.</p>
+    </footer>
 
-    
-<footer class="footer">
-    <nav class="nave" id="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobremi">Sobre Mí</a>
-        <a href="#estudios">Educación</a>
-        <a href="#portafolio">Portafolio</a>
-    </nav>
-    
-</footer>
-
-
-
+    <script src="js/js.js"></script>
 </body>
-
-<script src="js/js.js"></script>
 </html>
