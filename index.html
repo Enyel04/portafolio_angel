@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     
-    <title>Angel Mendez | Desarrollador Móvil y Web</title>
+    <title>Angel Mendez | Ingeniero en Informática</title>
 </head>
 <body>
     <header class="header">
@@ -26,6 +26,9 @@
             <a href="#sobremi">Sobre Mí</a>
             <a href="#estudios">Educación</a>
             <a href="#portafolio">Portafolio</a>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                <i class="fa-solid fa-sun"></i>
+            </button>
         </nav>
     </header>
 
@@ -39,7 +42,7 @@
             </div>
 
             <h1>Angel Mendez</h1>
-            <h2>Desarrollador Móvil y Web | TSU en Informática</h2>
+            <h2>Ingeniero en Informática | Desarrollador Móvil y Web</h2>
             
             <div class="redes">
                 <a href="https://github.com/Enyel04" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -56,7 +59,7 @@
                 <div class="contenido-seccion">
                     <h2>Sobre Mí</h2>
                     <p><span>Hola, soy Angel Mendez.</span><br>
-                        Desarrollador de software especializado en la creación de aplicaciones móviles multiplataforma y soluciones web. Me enfoco en construir arquitecturas escalables, interfaces minimalistas y experiencias de usuario fluidas. Actualmente me dedico al desarrollo y publicación de aplicaciones en la Google Play Store, además de la gestión de bases de datos y sistemas ERP Idempiere y creando las Apis.</p>
+                        Desarrollador de software especializado en la creación de aplicaciones móviles multiplataforma y soluciones web. Me enfoco en construir arquitecturas escalables, interfaces minimalistas y experiencias de usuario fluidas. Actualmente me dedico al desarrollo y publicación de aplicaciones en la Google Play Store, además de la gestión de bases de datos, sistemas ERP Idempiere y el desarrollo de APIs robustas.</p>
                 </div>
 
                 <div class="contenedor-sobremi">
@@ -82,7 +85,7 @@
                                 <i class="fa-solid fa-database" style="color: #336791;"></i><span>PostgreSQL</span>
                             </div>
                             <div class="contenedor-sobre-conocimientos-icono">
-                                <i class="fa-solid fa-server" style="color: #e1e1e1;"></i><span>Idempiere</span>
+                                <i class="fa-solid fa-server" style="color: #a8a29e;"></i><span>Idempiere</span>
                             </div>
                             <div class="contenedor-sobre-conocimientos-icono">
                                 <i class="fa-brands fa-css3-alt" style="color: #38B2AC;"></i><span>Tailwind CSS</span>
@@ -98,6 +101,10 @@
         <div class="contenedor-estudios">
             <h2>Educación</h2>
             <div class="datos-estudio">
+                <h4>Ingeniero en Informática</h4>
+                <p>Universidad Politécnica Territorial del estado Portuguesa "Juan de Jesús Montilla"</p>
+            </div>
+                <div class="datos-estudio">
                 <h4>Técnico Superior en Informática</h4>
                 <p>Universidad Politécnica Territorial del estado Portuguesa "Juan de Jesús Montilla"</p>
             </div>
@@ -119,94 +126,84 @@
             
             <div class="contenido__portafolio">
                 
-               <div data-content id="apps-moviles" class="active">
-    <div class="contenedor__contenido__portafolio__imagenes">
-        
-        <div class="contenedor__imagenes" data-titulo="Conversor VE Monitor" onclick="window.modal_conversor.showModal();" style="cursor: pointer;">
-            <picture>
-                <img loading="lazy" src="imagenes/app/ConversorVE.png" alt="Conversor VE Monitor App">
-            </picture>
-            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
-        </div> 
+                <div data-content id="apps-moviles" class="active">
+                    <div class="contenedor__contenido__portafolio__imagenes">
+                        
+                        <div class="contenedor__imagenes" data-titulo="Conversor VE Monitor" onclick="window.modal_conversor.showModal();" style="cursor: pointer;">
+                            <picture>
+                                <img loading="lazy" src="imagenes/app/ConversorVE.png" alt="Conversor VE Monitor App">
+                            </picture>
+                            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
+                        </div> 
 
-        <div class="contenedor__imagenes" data-titulo="Autogestión Snitch" onclick="window.modal_snitch.showModal();" style="cursor: pointer;">
-            <picture>
-                <img loading="lazy" src="imagenes/app/iconss.png" alt="Autogestión Snitch">
-            </picture>
-            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
-        </div> 
+                        <div class="contenedor__imagenes" data-titulo="Autogestión Snitch" onclick="window.modal_snitch.showModal();" style="cursor: pointer;">
+                            <picture>
+                                <img loading="lazy" src="imagenes/app/iconss.png" alt="Autogestión Snitch">
+                            </picture>
+                            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
+                        </div> 
 
-        <div class="contenedor__imagenes" data-titulo="Fuerza de Ventas" onclick="window.modal_ventas.showModal();" style="cursor: pointer;">
-            <picture>
-                <img loading="lazy" src="imagenes/app/salesforce.png" alt="Fuerza de Ventas App">
-            </picture>
-            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
-        </div> 
-    </div>
+                        <div class="contenedor__imagenes" data-titulo="Fuerza de Ventas" onclick="window.modal_ventas.showModal();" style="cursor: pointer;">
+                            <picture>
+                                <img loading="lazy" src="imagenes/app/salesforce.png" alt="Fuerza de Ventas App">
+                            </picture>
+                            <a href="#" class="icono__solo" title="Ver Detalles"><i class="fa-solid fa-circle-info"></i></a>
+                        </div> 
+                    </div>
 
-                <dialog id="modal_conversor" class="modal-moderno">
-                    <h4>Conversor VE Monitor</h4>
-                    <div class="slider">
-                        <div class="slider--inner">
-                            <img loading="lazy" src="imagenes/app/ConversorVE.png" alt="Conversor VE Monitor">
+                    <dialog id="modal_conversor" class="modal-moderno">
+                        <h4>Conversor VE Monitor</h4>
+                        <div class="slider">
+                            <div class="slider--inner">
+                                <img loading="lazy" src="imagenes/app/ConversorVE.png" alt="Conversor VE Monitor">
+                            </div>
                         </div>
-                    </div>
-                    <p style="color: var(--celeste); font-family: var(--fuente-codigo); font-size: 1.4rem; text-align: center;">
-                        Desarrollado con: Flutter & Dart
-                    </p>
-                    <p>Herramienta financiera de alta utilidad optimizada para el mercado local. Procesa conversiones precisas entre Bolívares (VES), Dólares y Euros basándose en las tasas oficiales del Banco Central de Venezuela (BCV).</p>
-                    <p>Diseñada bajo principios de rendimiento y privacidad, ofrece una arquitectura ligera y una interfaz minimalista para facilitar cálculos rápidos en transacciones diarias.</p>
-                    <div class="modal-acciones" style="flex-wrap: wrap; gap: 1rem; justify-content: center;">
-                        <a href="https://play.google.com/store/apps/details?id=com.enyeldev.cambiovemonitor&pcampaignid=web_share" target="_blank" class="btn-github" style="background-color: #01875f;"><i class="fa-brands fa-google-play"></i> Play Store</a>
-                        <button onclick="window.modal_conversor.close();" class="btn-cerrar">Cerrar</button>
-                    </div>
-                </dialog>
-
-                <dialog id="modal_snitch" class="modal-moderno">
-                    <h4>Autogestión Snitch</h4>
-                    <div class="slider">
-                        <div class="slider--inner">
-                            <img loading="lazy" src="imagenes/app/iconss.png" alt="Autogestión Snitch">
+                        <p class="tag-desarrollo">Desarrollado con: Flutter & Dart</p>
+                        <p>Herramienta financiera de alta utilidad optimizada para el mercado local. Procesa conversiones precisas entre Bolívares (VES), Dólares y Euros basándose en las tasas oficiales del Banco Central de Venezuela (BCV).</p>
+                        <p>Diseñada bajo principios de rendimiento y privacidad, ofrece una arquitectura ligera y una interfaz minimalista para facilitar cálculos rápidos en transacciones diarias.</p>
+                        <div class="modal-acciones">
+                            <a href="https://play.google.com/store/apps/details?id=com.enyeldev.cambiovemonitor&pcampaignid=web_share" target="_blank" class="btn-playstore"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                            <button onclick="window.modal_conversor.close();" class="btn-cerrar">Cerrar</button>
                         </div>
-                    </div>
-                    <p style="color: var(--celeste); font-family: var(--fuente-codigo); font-size: 1.4rem; text-align: center;">
-                        Desarrollado con: Flutter & Dart
-                    </p>
-                    <p>Plataforma B2B de autogestión orientada a optimizar la cadena de suministro de negocios. Simplifica el proceso de abastecimiento permitiendo a los comerciantes explorar catálogos, centralizar compras y generar pedidos de reposición de inventario en tiempo real.</p>
-                    <p>Su interfaz fluida y escalable reduce los tiempos de gestión con proveedores y agiliza la logística comercial.</p>
-                    <p>Funcionando con Idempiere</p>
+                    </dialog>
 
-                    <div class="modal-acciones" style="flex-wrap: wrap; gap: 1rem; justify-content: center;">
-                        <a href="URL_PLAYSTORE_SNITCH" target="_blank" class="btn-github" style="background-color: #01875f;"><i class="fa-brands fa-google-play"></i> Play Store</a>
-                        <button onclick="window.modal_snitch.close();" class="btn-cerrar">Cerrar</button>
-                    </div>
-                </dialog>
-
-                <dialog id="modal_ventas" class="modal-moderno">
-                    <h4>Fuerza de Ventas</h4>
-                    <div class="slider">
-                        <div class="slider--inner">
-                            <img loading="lazy" src="imagenes/app/salesforce.png" alt="Fuerza de Ventas">
+                    <dialog id="modal_snitch" class="modal-moderno">
+                        <h4>Autogestión Snitch</h4>
+                        <div class="slider">
+                            <div class="slider--inner">
+                                <img loading="lazy" src="imagenes/app/iconss.png" alt="Autogestión Snitch">
+                            </div>
                         </div>
-                    </div>
-                    <p style="color: var(--celeste); font-family: var(--fuente-codigo); font-size: 1.4rem; text-align: center;">
-                        Desarrollado con: Flutter & Dart
-                    </p>
-                    <p>Aplicación móvil corporativa diseñada para optimizar las operaciones de equipos comerciales en campo. Permite la gestión eficiente de órdenes de venta, registro de cobros y captura de coordenadas geográficas.</p>
-                    <p>Destaca por su arquitectura con soporte <em>offline</em> y sincronización diferida de datos, garantizando la operatividad sin conexión a internet y mejorando la productividad en la toma de decisiones.</p>
-                    <p>Funcionando con Idempiere</p>
+                        <p class="tag-desarrollo">Desarrollado con: Flutter & Dart (Integrado con Idempiere ERP)</p>
+                        <p>Plataforma B2B de autogestión orientada a optimizar la cadena de suministro de negocios. Simplifica el proceso de abastecimiento permitiendo a los comerciantes explorar catálogos, centralizar compras y generar pedidos de reposición de inventario en tiempo real al conectarse directamente mediante API al ERP corporativo.</p>
+                        <p>Su interfaz fluida y escalable reduce los tiempos de gestión con proveedores y agiliza la logística comercial.</p>
+                        <div class="modal-acciones">
+                            <a href="URL_PLAYSTORE_SNITCH" target="_blank" class="btn-playstore"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                            <button onclick="window.modal_snitch.close();" class="btn-cerrar">Cerrar</button>
+                        </div>
+                    </dialog>
 
-                    <div class="modal-acciones" style="flex-wrap: wrap; gap: 1rem; justify-content: center;">
-                        <a href="URL_PLAYSTORE_VENTAS" target="_blank" class="btn-github" style="background-color: #01875f;"><i class="fa-brands fa-google-play"></i> Play Store</a>
-                        <button onclick="window.modal_ventas.close();" class="btn-cerrar">Cerrar</button>
-                    </div>
-                </dialog>
-            </div>
+                    <dialog id="modal_ventas" class="modal-moderno">
+                        <h4>Fuerza de Ventas</h4>
+                        <div class="slider">
+                            <div class="slider--inner">
+                                <img loading="lazy" src="imagenes/app/salesforce.png" alt="Fuerza de Ventas">
+                            </div>
+                        </div>
+                        <p class="tag-desarrollo">Desarrollado con: Flutter & Dart (Integrado con Idempiere ERP)</p>
+                        <p>Aplicación móvil corporativa diseñada para optimizar las operaciones de equipos comerciales en campo. Permite la gestión eficiente de órdenes de venta, registro de cobros y captura de coordenadas geográficas.</p>
+                        <p>Destaca por su arquitectura con soporte <em>offline</em> y sincronización diferida de datos, garantizando la operatividad sin conexión a internet y mejorando la productividad en la toma de decisiones corporativas.</p>
+                        <div class="modal-acciones">
+                            <a href="URL_PLAYSTORE_VENTAS" target="_blank" class="btn-playstore"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                            <button onclick="window.modal_ventas.close();" class="btn-cerrar">Cerrar</button>
+                        </div>
+                    </dialog>
+                </div>
 
                 <div data-content id="sistemas-web">
                     <div class="contenedor__contenido__portafolio__imagenes">
 
-                      <div class="contenedor__imagenes" data-titulo="Sistema de Gestión Escolar / PHP & SQL" onclick="window.modal_escolar.showModal();" style="cursor: pointer;">
+                        <div class="contenedor__imagenes" data-titulo="Sistema de Gestión Escolar / PHP & SQL" onclick="window.modal_escolar.showModal();" style="cursor: pointer;">
                             <picture>
                                 <img loading="lazy" src="imagenes/vicente/VicenteEmilioSojo.png" alt="Gestión Escolar">
                             </picture>
@@ -215,24 +212,16 @@
 
                         <dialog id="modal_escolar" class="modal-moderno">
                             <h4>Sistema de Gestión Escolar</h4>
-                            
                             <div class="slider">
                                 <div class="slider--inner">
                                     <img loading="lazy" src="imagenes/vicente/VicenteEmilioSojo.png" alt="Gestión Escolar">
                                 </div>
                             </div>
-                            
-                            <p style="color: var(--celeste); font-family: var(--fuente-codigo); font-size: 1.4rem; text-align: center;">
-                                Desarrollado con: PHP, MySQL y JavaScript.
-                            </p>
-
-                            <p>Desarrollado durante el 2024, su objetivo central es sistematizar la elaboración de los horarios del personal docente basándose en las reglas de negocio y los requerimientos de la institución.</p>
-                            
+                            <p class="tag-desarrollo">Desarrollado con: PHP, MySQL y JavaScript</p>
+                            <p>Desarrollado durante el período 2024, su objetivo central es sistematizar de forma inteligente la elaboración de los horarios del personal docente basándose en las reglas de negocio y los requerimientos de la institución.</p>
                             <p>Esta herramienta agiliza la búsqueda de información oportuna para la toma de decisiones, garantizando la seguridad de la data y permitiendo gestionar de forma integral la información personal de los profesores y usuarios del sistema.</p>
-
-                            <div class="modal-acciones" style="flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                            <div class="modal-acciones">
                                 <a href="https://www.youtube.com/watch?v=Xm2y1POLqYs" target="_blank" class="btn-video"><i class="fa-brands fa-youtube"></i> Ver Video</a>
-                                                            
                                 <button onclick="window.modal_escolar.close();" class="btn-cerrar">Cerrar</button>
                             </div>
                         </dialog>
@@ -264,6 +253,7 @@
                                 <img loading="lazy" src="imagenes/unearte/registro.webp" alt="img">
                             </div>
                         </div>
+                        <p class="tag-desarrollo">Desarrollado con: PHP & SQL</p>
                         <p>Sistema encargado de gestionar horarios, registrar profesores y aulas, verificando el estado de actividad para su respectiva asignación. Genera reportes completos de asignaciones por carrera.</p>
                         <div class="modal-acciones">
                             <a href="https://github.com/TheOzcuro/proyecto" target="_blank" class="btn-github"><i class="fa-brands fa-github"></i> Ver Código</a>
@@ -271,8 +261,6 @@
                         </div>
                     </dialog>
                 </div> 
-
-            
 
             </div>
         </div>
